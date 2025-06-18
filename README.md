@@ -40,7 +40,7 @@ Build a device to:
 1.	Measure air quality parameters: PM2.5, CO2.
 2.	Send data to the cloud using Wi-Fi.
 3.	Display data on a dashboard that can be accessed remotely.
-________________________________________
+
 🧰 Components Required
 Component	Quantity
 NodeMCU (ESP8266) or ESP32	1
@@ -62,14 +62,13 @@ MH-Z19 (CO2):
 •	GND → GND
 •	TX → GPIO22
 •	RX → GPIO21
-________________________________________
+
 💻 Cloud Platform Options
 Option 1: ThingSpeak (Free and Easy)
 1.	Go to thingspeak.com, create an account.
 2.	Create a new channel.
 3.	Enable fields for PM2.5, CO2.
-4.	Note down the Channel ID and API Key.
-________________________________________
+4.	Note down the Channel ID and API Key
 🧠 Arduino Code Example (for ESP32 + ThingSpeak)
 #include <WiFi.h>
 #include "ThingSpeak.h"
@@ -138,17 +137,16 @@ int readCO2() {
   }
   return -1;
 }
-________________________________________
 📊 Dashboard View
 On ThingSpeak:
 •	You will see live graphs of PM2.5 levels and CO2 concentrations.
 •	You can set up alerts if levels exceed safe limits.
-________________________________________
-📸 Want the Circuit Diagram Image?
-Let me know and I’ll generate the circuit image for this setup too.
-________________________________________
 🚀 Optional Enhancements
 •	Add temperature and humidity sensor (e.g., DHT22).
 •	Use OLED display for local data display.
 •	Store historical data to Google Sheets or Firebase.
 •	Add Buzzer or RGB LED for real-time air quality warnings
+
+#OUTPUT
+
+![Image](https://github.com/user-attachments/assets/6b185667-2d3e-44cf-b4c1-4f53df14806b)
